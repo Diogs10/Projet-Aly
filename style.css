@@ -1,0 +1,269 @@
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+.entete1
+{
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    background-color: #1E1F29;
+    color: white;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.entete2
+{
+    height: 6em;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.entete3
+{
+    height: 4em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.milieu1
+{
+    height: 22em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.milieu2
+{
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.milieu3
+{
+    display: flex;
+    width: 70%;
+    margin:auto;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.menu
+{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.breukh
+{
+    font-size: 2.2em;
+}
+.pt
+{
+    color: red;
+    font-size: 6em;
+    margin-top: -30%;
+}
+input[type="text"]
+{
+    width: 15em;
+    height: 2.2em;
+}
+.Categories
+{
+    width: 10em;
+    height: 1.4em;
+    border: 1px solid white;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    color: gray;
+    background-color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+.RCHE
+{
+    display: flex;
+    align-items: center;
+}
+.recherche
+{
+    width: 8em;
+    height: 2em;
+    border: 2px solid red;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+    background-color: red;
+    text-align: center;
+}
+.objet:hover
+{
+    color: red;
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+.entete11>span:hover,.entete12>span:hover
+{
+    cursor: pointer;
+    border-bottom: 1px solid red;
+    color: red;
+}
+.BR 
+{
+    display: flex;
+    align-items: center;
+}
+.object1
+{
+    color: gray;
+}
+.produit
+{
+    font-weight: bold;
+    font-size: 2em;
+}
+.BB
+{
+    display: flex;
+}
+.coeur,.pagnier
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa
+{
+    color: #D20024;
+}
+.BB2
+{
+    color:white
+}
+.photo1
+{
+    width: 350px;
+}
+.milieu31,.milieu32,.milieu33,.milieu34
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    height: 500px;
+    width: 300px;
+}
+.photo2
+{
+    width: 200px;
+    margin: 50px;
+}
+.Cat
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Cat1
+{
+    font-size:medium;
+    color: gray;
+    margin-bottom: 3%;
+}
+.Cat2
+{
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+.Cat3
+{
+    color: red;
+    margin-bottom: 3%;
+}
+.Cat4
+{
+    color: gray;
+    text-decoration: line-through;
+}
+.Catt
+{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+.trait
+{
+    border-bottom: 1px solid gray;
+    width: 4em;
+}
+.finMilieu
+{
+    width: 50%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; 
+    padding: 0 25% 0 25%;
+}
+.toile,.toile1,.toile2
+{
+    position: relative;
+    top: -100%;
+    border-top: 350px solid rgba(189, 11, 11, 0.858);
+    border-right: 280px solid transparent;
+}
+.toile::before
+{
+    content: "Laptop Collection";
+    color: white;
+    position: absolute;
+    font-size: xx-large;
+    top: -10em;
+    left: 1em;
+    font-weight: bold;
+}
+.toile1::before
+{
+    content: "Accessories Collection";
+    color: white;
+    position: absolute;
+    font-size: xx-large;
+    top: -10em;
+    left: 1em;
+    font-weight: bold;
+}
+.toile2::before
+{
+    content: "Cameras Collection";
+    color: white;
+    position: absolute;
+    font-size: xx-large;
+    top: -10em;
+    left: 1em;
+    font-weight: bold;
+}
+.image1
+{
+    display: flex;
+    flex-direction: column;
+}
+.B
+{
+    color: black;
+}
