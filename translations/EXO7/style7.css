@@ -1,0 +1,95 @@
+/* body
+{
+    width: 100%;
+    height: 100%;
+}
+.conteneur
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bouton
+{
+    width: 500px;
+    height: 200px;
+    border: 8px solid gray;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: white;
+    font-size: 6em;
+    transition: 1s ease-in-out;
+}
+.bouton::after
+{
+    content: "Hoverble";
+    font-size: 12em;
+    color: white;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.bouton:hover::after
+{ 
+    content: "Hoverble";
+    font-size: 6em;
+} */
+ 
+.conteneur
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(71, 69, 69);
+    display: flex;
+}
+.bouton
+{
+    position: relative;
+    background-color: rgb(71, 69, 69);
+    width: 30%;
+    height: 25%;
+    margin: auto;
+    border: 10px solid grey;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bouton > p
+{
+    color: white;
+    font-size: 4em;
+}
+.bouton::after
+{
+
+    content: "Hoverble";
+    color: white;
+    position: absolute;
+    font-size: 200em;
+    color: rgb(255, 255, 255,0.01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    transition: 0.2s;
+}
+.bouton:hover::after 
+{
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,71 @@
+body
+{
+    width: 100%;
+    height: 100%;
+}
+.conteneur
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bouton
+{
+    width: 500px;
+    height: 200px;
+    border: 8px solid gray;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: black;
+    font-size: 6em;
+    transition: 1s ease-in-out;
+}
+.bouton::before
+{
+    content: "HOVERBLE";
+    font-size: 6em;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+    top: 100%;
+}
+.bouton::after
+{
+    content: "HOVERBLE";
+    font-size: 6em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.bouton:hover::before
+{
+    transform: translate(0%,-100%);
+}
+.bouton:hover::after
+{
+    transform: translate(100%,-100%);
+}
+.bouton:hover p
+{
+    display: none;
+}

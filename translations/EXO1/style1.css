@@ -1,0 +1,131 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.carre1{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1{
+    text-align: center;
+    z-index: 100;
+}
+.carre2{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    transform: rotate(45deg);
+    transition-property:background-color;
+    transition-duration: 1s;
+}
+
+/* .carre2:hover{
+    background-color: aquamarine;
+} */
+.carre1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleX(0);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.carre1:hover::before{
+    transform: scaleX(1);
+}
+
+.carre1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 4px solid white ;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.carre1:hover::after{
+    transform: scaleY(1);
+    transition-delay: 1s;
+}
+/* .carre1:hover .carre2::after{
+    transform: scaleY(1);
+    transition-delay: 3s;
+}  */
+
+
+
+
+
+.carre2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleX(0);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.carre2:hover::before{
+    transform: scaleX(1);
+    transition-delay: 2s;
+}
+.carre2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 4px solid white ;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.carre2:hover::after{
+    transform: scaleY(1);
+    transition-delay: 3s;
+} 
+
+
+.VERY
+{
+    color:white;
+    z-index: 100;
+}
+
+
+
+

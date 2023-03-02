@@ -267,3 +267,37 @@ input[type="text"]
 {
     color: black;
 }
+.Mn{
+    position:absolute;
+    margin-top: 6%;
+    margin-left: 2%;
+}
+.BC 
+{
+    color: white;
+}
+.milieu34,.milieu33{
+    position: relative;
+}
+.new
+{
+    border: 1px solid red;
+    background-color: red;
+    width: 3em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: white;
+    padding: 0.3em;
+}
+.pourcentage
+{
+    border: 1px solid red;
+    background-color: white;
+    width: 3em;
+    position: absolute;
+    right: 5em;
+    top: 1em;
+    color: red;
+    padding: 0.3em;
+}
