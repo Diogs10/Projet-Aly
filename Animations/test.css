@@ -1,0 +1,459 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteneur {
+    width: 100%;
+    padding: 1%;
+}
+
+.contenu {
+    width: 100%;
+    background-color: black;
+    height: 7em;
+    position: relative;
+}
+
+.trait {
+    border-bottom: 20px dotted white;
+    height: 3em;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.jeu {
+    display: flex;
+    position: relative;
+    top: -50%;
+    animation: courir 5s linear infinite;
+}
+
+.suiveur {
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.bouche {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    background-color: black;
+    animation-name: animBOUCHE;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+.fuiyard {
+    width: 5em;
+    height: 5em;
+    border-radius: 50% 50% 0 0;
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: couleur .5s linear infinite;
+}
+
+.fuiyard::after {
+    background: linear-gradient(-45deg, red 8px, transparent 0), linear-gradient(45deg, red 8px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -15%;
+    left: 0px;
+    width: 100%;
+    height: 5em;
+    transform: rotateZ(180deg);
+    animation: couleur1 .5s linear infinite;
+}
+
+.eyesM1,
+.eyesM2 {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.eyesM1::after,
+.eyesM2::after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+}
+
+.eyesM1::after {
+    animation: beut1 .5s ease infinite;
+}
+
+.eyesM2::after {
+    animation: beut2 .5s ease infinite;
+}
+
+@keyframes animBOUCHE {
+    0% {
+        clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+
+    25% {
+        clip-path: polygon(100% 60%, 44% 48%, 100% 36%);
+    }
+
+    50% {
+        clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+    }
+
+    75% {
+        clip-path: polygon(100% 59%, 44% 48%, 100% 36%);
+    }
+
+    100% {
+        clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    }
+}
+
+@keyframes courir {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes couleur {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes couleur1 {
+    0% {
+        background: linear-gradient(-45deg, red 8px, transparent 0), linear-gradient(45deg, red 8px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -15%;
+        left: 0px;
+        width: 100%;
+        height: 5em;
+        transform: rotateZ(180deg);
+    }
+
+    25% {
+        background: linear-gradient(-45deg, green 8px, transparent 0), linear-gradient(45deg, green 8px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -15%;
+        left: 0px;
+        width: 100%;
+        height: 5em;
+        transform: rotateZ(180deg);
+    }
+
+    50% {
+        background: linear-gradient(-45deg, yellow 8px, transparent 0), linear-gradient(45deg, yellow 8px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -15%;
+        left: 0px;
+        width: 100%;
+        height: 5em;
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        background: linear-gradient(-45deg, gray 8px, transparent 0), linear-gradient(45deg, gray 8px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -15%;
+        left: 0px;
+        width: 100%;
+        height: 5em;
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        background: linear-gradient(-45deg, red 8px, transparent 0), linear-gradient(45deg, red 8px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -15%;
+        left: 0px;
+        width: 100%;
+        height: 5em;
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes beut1 {
+    0% {
+        left: 0%;
+        background-color: blue;
+    }
+
+    50% {
+        left: 50%;
+        background-color: red;
+    }
+
+    100% {
+        left: 0%;
+        background-color: yellow;
+    }
+}
+
+@keyframes beut2 {
+    0% {
+        left: 50%;
+        background-color: red;
+    }
+
+    50% {
+        left: 0%;
+        background-color: yellow;
+    }
+
+    100% {
+        left: 50%;
+        background-color: blue;
+    }
+}
+
+.emoji {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.BeutEmoji1 {
+    display: flex;
+}
+
+.emoji1,
+.emoji3 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #FCEABD 0%, #FFBA81 100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -4px 50px 39px #FFA30A;
+}
+
+.emoji11,
+.emoji12 {
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    box-shadow: 6px 2px 24px 0px #000 inset;
+}
+
+.emoji11 {
+    left: -25%;
+}
+
+.emoji12 {
+    left: 25%;
+}
+
+.emoji11::after,
+.emoji12::after {
+    content: "";
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    animation: animBeut .5s ease infinite;
+}
+
+.Bouche1 {
+    width: 3em;
+    height: 1em;
+    border-radius: 25%;
+    background-color: #442200;
+    position: relative;
+    top: 20%;
+}
+
+@keyframes animBeut {
+    0% {
+        top: 25%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: 35%;
+    }
+
+    50% {
+        top: 35%;
+        left: 70%;
+    }
+
+    75% {
+        top: 70%;
+        left: 35%;
+    }
+
+    100% {
+        top: 25%;
+        left: 0%;
+    }
+}
+
+.visage {
+
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #FCEABD 0%, #FFBA81 100%);
+    border-radius: 50%;
+    box-shadow: inset 0px -4px 50px 39px #FFA30A;
+}
+
+.BeutEmoji2 {
+    height: 30%;
+    width: 85%;
+    margin-top: 25%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.emoji22 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 6px 2px 24px 0px #000 inset;
+}
+
+.emoji21 {
+    height: 120px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top: 10px solid #442200;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.iris {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    margin-top: 38%;
+    margin-left: 35%;
+    border-radius: 50%;
+}
+
+.Bouche2 {
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-bottom: 35px solid #442200;
+    margin-top: -13%;
+    margin-left: 26%;
+}
+
+.langue {
+    height: 65px;
+    width: 38px;
+    background-color: rgb(204, 63, 63);
+    margin-top: 65%;
+    margin-left: 37%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotateX(49deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    box-shadow: 4px 4px 24px 6px rgb(204, 84, 104) inset;
+}
+
+.BeutEmoji3 {
+    height: 30%;
+    width: 65%;
+    margin-top: 25%;
+    margin-left: 18%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.emoji31,
+.emoji32 {
+    height: 50px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #442200;
+    margin-top: 10%;
+}
+
+.Bouche3 {
+    height: 170px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top: 10px solid #442200;
+    margin-top: 4%;
+    margin-left: 26%;
+}
